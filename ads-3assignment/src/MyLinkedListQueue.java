@@ -23,16 +23,19 @@ public class MyLinkedListQueue<E> implements MyQueue<E> {
 
     @Override
     public E peek() {
-        return null;
+        if (isEmpty()) {
+            throw new NoSuchElementException();
+        }
+        return myLinkedList.get(0);
     }
 
     @Override
     public boolean isEmpty() {
-        return false;
+        return myLinkedList.isEmpty();
     }
 
     @Override
     public int size() {
-        return 0;
+        return myLinkedList.size();
     }
 }
