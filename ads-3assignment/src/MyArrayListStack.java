@@ -1,14 +1,14 @@
 public class MyArrayListStack<E> implements MyStack<E> {
 
-    private MyArrayListStack<E> myArrayListStack;
+    private MyArrayList<E> myArrayList;
+
 
     public MyArrayListStack(){
-        myArrayListStack = new MyArrayListStack<>();
+        myArrayList = new MyArrayList<>();
     }
 
     @Override
     public void push(E element) {
-
     }
 
     @Override
