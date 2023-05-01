@@ -29,7 +29,7 @@ public class MyArrayListQueue<E> implements MyQueue<E> {
 
     @Override
     public boolean isEmpty() {
-        return false;
+        return myArrayList.isEmpty();
     }
 
     @Override
