@@ -38,6 +38,6 @@ public class MyArrayListStack<E> implements MyStack<E> {
 
     @Override
     public boolean isEmpty() {
-        return false;
+        myArrayList.isEmpty();
     }
 }
