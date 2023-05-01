@@ -1,7 +1,13 @@
+import java.util.NoSuchElementException;
+
 public class MyArrayListQueue<E> implements MyQueue<E> {
+
+    private MyArrayList<E> myArrayList;
+    public MyArrayListQueue(){
+        myArrayList = new MyArrayList<>();
+    }
     @Override
     public void enqueue(E element) {
-        4
     }
 
     @Override
