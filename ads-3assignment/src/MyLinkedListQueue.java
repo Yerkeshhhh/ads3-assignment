@@ -8,7 +8,7 @@ public class MyLinkedListQueue<E> implements MyQueue<E> {
 
     @Override
     public void enqueue(E element) {
-
+        myLinkedList.add(element);
     }
 
     @Override
