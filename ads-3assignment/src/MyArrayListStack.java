@@ -9,6 +9,7 @@ public class MyArrayListStack<E> implements MyStack<E> {
 
     @Override
     public void push(E element) {
+        myArrayList.add(element);
     }
 
     @Override
