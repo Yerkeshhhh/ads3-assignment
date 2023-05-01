@@ -21,7 +21,10 @@ public class MyArrayListQueue<E> implements MyQueue<E> {
 
     @Override
     public E peek() {
-        return null;
+        if (isEmpty()) {
+            throw new NoSuchElementException();
+        }
+        return myArrayList.get(0);
     }
 
     @Override
