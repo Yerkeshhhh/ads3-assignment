@@ -97,7 +97,7 @@ public class MyArrayList<E> implements MyList<E> {
     }
 
     @Override
-    public static E remove(int index) {
+    public E remove(int index) {
         Objects.checkIndex(index, size);
         final Object[] es = elements;
 
