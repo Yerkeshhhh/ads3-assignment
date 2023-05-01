@@ -1,3 +1,5 @@
+import java.util.NoSuchElementException;
+
 public class MyLinkedListQueue<E> implements MyQueue<E> {
 
     MyLinkedList<E> myLinkedList;
@@ -13,7 +15,10 @@ public class MyLinkedListQueue<E> implements MyQueue<E> {
 
     @Override
     public E dequeue() {
-        return null;
+        if (isEmpty()) {
+            throw new NoSuchElementException();
+        }
+        return myLinkedList.remove(0);
     }
 
     @Override
