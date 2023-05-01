@@ -8,6 +8,7 @@ public class MyArrayListQueue<E> implements MyQueue<E> {
     }
     @Override
     public void enqueue(E element) {
+        myArrayList.add(element);
     }
 
     @Override
