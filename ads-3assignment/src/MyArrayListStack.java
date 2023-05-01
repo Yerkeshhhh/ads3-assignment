@@ -25,7 +25,10 @@ public class MyArrayListStack<E> implements MyStack<E> {
 
     @Override
     public E peek() {
-        return null;
+        if (isEmpty()) {
+            throw new EmptyStackException();
+        }
+        return myArrayList.get(myArrayList.size()-1);
     }
 
     @Override
