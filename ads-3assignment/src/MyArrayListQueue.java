@@ -13,7 +13,10 @@ public class MyArrayListQueue<E> implements MyQueue<E> {
 
     @Override
     public E dequeue() {
-        return null;
+        if (isEmpty()) {
+            throw new NoSuchElementException();
+        }
+        return myArrayList.remove(0);
     }
 
     @Override
