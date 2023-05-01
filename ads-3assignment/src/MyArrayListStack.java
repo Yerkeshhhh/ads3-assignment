@@ -1,3 +1,6 @@
+import java.util.EmptyStackException;
+import java.util.NoSuchElementException;
+
 public class MyArrayListStack<E> implements MyStack<E> {
 
     private MyArrayList<E> myArrayList;
@@ -14,7 +17,10 @@ public class MyArrayListStack<E> implements MyStack<E> {
 
     @Override
     public E pop() {
-        return null;
+        if (isEmpty()) {
+            throw new EmptyStackException();
+        }
+        return myArrayList.remove(myArrayList.size()-1);
     }
 
     @Override
